@@ -45,7 +45,7 @@ class LoginActivity :AppCompatActivity() {
                         //통신 성공
                         if(response.isSuccessful) { //statusCode가 200-300 사이일 때. 응답 body 이용 가능
                             if(response.body()!!.success) { //ResponseLogin의 success가 true인 경우
-                                val nextIntent = Intent(this@LoginActivity, RegisterActivity::class.java)
+                                val nextIntent = Intent(this@LoginActivity, PageActivity::class.java)
 
                                 showToast("로그인 성공.")
 
